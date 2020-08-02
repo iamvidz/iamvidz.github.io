@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="try4.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>E-Placards</title>
 </head>
 <body>
-    
-    
-    <div class="backLeft" style="background:aqua"></div>
-
-    <h1 style="color: rgb(153, 21, 49);">E-Placards</h1>
-            <br>
-            <div class="content">
-                <h2>Login</h2>
-                <form action="dashboard.html" >
-                    
-                    <div class="form-group">
-                        <label for="username" class="form-label">E-mail ID</label>
-                        <input type="text" name="email" required="" />
-                        
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" name="password" required="" />
-                        
-                    </div>
-                    
-                    
-                    
-                    <button id="login" type="submit">Login</button>
-                    
-                </form>
-                <div>New here?
-                    <a href="signup.html"><button id="goRight" class="off">Sign Up</button></a>
-                </div>
-              </div>
+    <form action="dashboard.html" id="login-form">
+        <div class="heading">Login to E-Placards</div>
+        <div class="left">
+          <label for="email">Email</label> <br />
+          <input type="email" name="email" id="email" required/> <br />
+          <label for="password">Password</label> <br />
+          <input type="password" name="password" id="pass" required/> <br />
+          <input type="submit" value="Login" />
         </div>
+    
+        
+        <div class="right">
+            <a href="signup.html" class="twitter">
+                <!--       <span class="fontawesome-twitter"></span> -->
+                    Register      
+            </a> <br />
+          <div class="connect">Connect with</div>
+          <a href="" class="facebook">
+      <!--       <span class="fontawesome-facebook"></span> -->
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a> <br />
+          
+          <a href="" class="google-plus">
+      <!--       <span class="fontawesome-google-plus"></span> -->
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+          </a>
+        </div> 
+        </form>
 </body>
 </html>
