@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="try4.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>E-Placards</title>
+    <title>E-Placards | sign up</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="newlog.css">
 </head>
 <body>
-    <form action="dashboard.html" id="login-form">
-        <div class="heading">Sign Up to E-Placards</div>
-        <div class="left">
-          <label for="email">Email</label> <br />
-          <input type="email" name="email" id="email" required/> <br />
-          <label for="password">Password</label> <br />
-          <input type="password" name="password" id="pass" required/> <br />
-          <label for="password">Confirm Password</label> <br />
-          <input type="password" name="repassword" id="repass" required/> <br />
-          <input type="submit" value="Sign Up" />
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">Register</h5>
+              <form class="form-signin" action="dashboard.html">
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Email ID</label>
+                </div>
+  
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+                
+                <div class="form-label-group">
+                  <input type="password" id="reinputPassword" class="form-control" placeholder="Confirm Password" required>
+                  <label for="reinputPassword">Confirm Password</label>
+                </div>
+
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign Up</button>
+                <br>
+                <div>
+                    <label class="custom-control">Already have an account? <span class="badge badge-light badge-pill"> <a href="index.html">Log in</a></span></label>
+                </div>
+                <hr class="my-4">
+                
+                <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+                <button class="btn btn-lg btn-facebook btn-block text-uppercase" style="background-color: rgb(199, 36, 193);" type="submit"><i class="fab fa-instagram mr-2"></i> Sign in with Instagram</button>
+                
+            </form>
+            </div>
+          </div>
         </div>
-    
-        
-        <div class="right">
-            <div class="connect">Have an account?</div>
-            <a href="index.html" class="twitter">
-                    Log in     
-            </a> <br />
-          <div class="connect">Connect with</div>
-          <a href="" class="facebook">
-      <!--       <span class="fontawesome-facebook"></span> -->
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </a> <br />
-          
-          <a href="" class="google-plus">
-      <!--       <span class="fontawesome-google-plus"></span> -->
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-          </a>
-        </div> 
-        </form>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
