@@ -9,9 +9,7 @@
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+  
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -50,6 +48,8 @@
     min-height: 75rem;
     padding-top: 4.5rem;
   }
+
+
 </style>
 
 <body>
@@ -87,8 +87,19 @@
 
       </div>
     </header>
+    <script>
+      $(document).ready(function () {
 
-    <div class="jumbotron p-4 p-md-5 text-white rounded" style="background-color: #ad5570;">
+        $('#mybox').animate({
+          height: '500px',
+          width: '1110px',
+          
+        },"slow");
+
+
+      });
+    </script>
+    <div class="jumbotron  text-white rounded" id="mybox" style="background-color: #ad5570; height:200px; width:200px;">
       <div class="row">
         <div class="col-md-6 px-0">
           <div id="demo" class="carousel slide " data-ride="carousel">
@@ -128,10 +139,17 @@
           </div>
   
         </div>
-        <div class="col-md-4 ">
+        <script>
+          $(document).ready(function(){
+              $("#mytxt").hide();
+              $("#mytxt").fadeIn(4000);
+            
+          });
+        </script>
+        <div class="col-md-4 " id="mytxt">
           <br><br><br><br><br><br><br><br><br><br><br>
           <h1 class="display-4 font-italic" style="text-align: right;">
-            Welcome
+            Welcome !
           </h1>
         </div>
       </div>
